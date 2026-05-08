@@ -7,7 +7,7 @@ const pessoaSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    curso: {
+    RA: {
       type: String,
       required: true,
       trim: true,
@@ -18,4 +18,4 @@ const pessoaSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model('Pessoas', pessoaSchema, 'pessoas');
+module.exports = mongoose.model('Pessoa', pessoaSchema, 'pessoa');

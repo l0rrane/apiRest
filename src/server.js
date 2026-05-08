@@ -1,7 +1,7 @@
 const express = require('express');
 
 const connectDatabase = require('./config/database');
-const Pessoa = require('./models/Pessoa');
+const Pessoa = require('./models/pessoa');
 
 const app = express();
 const PORT = 3000;
