@@ -1,10 +1,16 @@
 const express = require('express');
+const rateLimit = require("express-rate-limit");
 
+const limiter = require('./config/security');
 const connectDatabase = require('./config/database');
-const Pessoa = require('./models/pessoa');
+const Pessoa = require('./models/Pessoa');
 
 const app = express();
 const PORT = 3000;
+
+
+
+app.use(limiter);
 
 app.use(express.json());
 

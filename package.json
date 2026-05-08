@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^5.2.1",
+    "express-rate-limit": "^8.5.1",
     "mongoose": "^9.4.1"
   },
   "name": "apirest",
@@ -11,7 +12,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server.js",
     "dev": "node --watch src/server.js"
-    
   },
   "repository": {
     "type": "git",
